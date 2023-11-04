@@ -1,23 +1,71 @@
-<h1>hello</h1>
-<div class="container-fluid">
+
+<div class="container-fluid" style="height:100px;width:100%;" >
   <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-1" style="margin-top:25px;">
         <div>
-            <img src="assets/bestbuylogo.jpg">
+            <img src="assets/bestbuylogo.jpg" height="60px" width="80px">
         </div>
     </div>
     <div class="col-sm-2">
-        <diV>
-
+        <diV  style="margin-top:25px;">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-list" style="font-size:20px;">Menu</i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Action</button></li>
+                  <li><button class="dropdown-item" type="button">Another action</button></li>
+                  <li><button class="dropdown-item" type="button">Something else here</button></li>
+                </ul>
+              </div>
+      
         </diV>
     </div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-2"></div>
-    <div class="col-sm-2"></div>
+    <div class="col-sm-3" style="margin-top:25px;">
+        <div class="input-group mb-3">
+           <input type="text" class="form-control" placeholder="search" aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
+        </div>
+          
+          
+    </div>
+    <div class="col-sm-2">
+     <div style="margin-top:25px;font-size:25px;">Return&order</div>   
+    </div>
+    <div class="col-sm-2" style="margin-top:25px;">
+        <i class="bi bi-cart" style=" font-size:25px;">Cart</i>
+    </div>
+    <div class="col-sm-1" style="margin-top:25px ;">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            login
+          </button>
+    </div>
+<!-- Button trigger modal -->
+
   
-
-
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="search" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="password" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">login</button>
+          <button type="button" class="btn btn-primary">re-enter</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
